@@ -1,0 +1,109 @@
+header {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1200x400/?openbook') center/cover no-repeat;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.hero h1 {
+  background-color: rgba(255,255,255,0.8);
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.book {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.book:hover {
+  transform: translateY(-4px);
+}
+
+.book img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.book h4, .book p {
+  margin: 0.3rem 0;
+}
+
+.book h4 {
+  font-size: 1rem;
+}
+
+.book p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.genres, .insights, .events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.genre, .insight, .event {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  font-size: 0.85rem;
+  margin-top: 2rem;
+}
