@@ -21,6 +21,18 @@
       padding: 1rem 2rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+        .header-left,
+    .header-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-left nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
     nav a {
       margin: 0 1rem;
       text-decoration: none;
@@ -85,14 +97,21 @@
 </head>
 <body>
   <header>
-    <div><strong>BookBound</strong></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="add-book.html">Add Book</a>
-      <a href="search-book.html">Search Book</a>
-      <a href="my-history.html">My History</a>
-      <a href="membership.html">Membership</a>
-    </nav>
+    <div class="header-left">
+      <strong>BookLoop</strong>
+      <nav>
+        <a href="Index.html">Home</a>
+        <a href="add-book.html">Add Book</a>
+        <a href="search-books.html">Search Books</a>
+        <a href="my-history.html">My History</a>
+        <a href="membership.html">Membership</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <span class="icon">🔔</span>
+      <span class="icon">👤</span>
+    </div>
+
   </header>
 
   <div class="container">
