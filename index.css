@@ -25,6 +25,53 @@
       color: #333;
       font-weight: 500;
     }
+    .hero-section {
+  position: relative;
+background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1350&q=80');
+ background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  margin: 0 0 20px;
+  font-size: 32px;
+  color: #111;
+}
+
+.search-bar {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  border: none;
+  background-color: orange;
+  color: white;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
     .hero {
       background: url('https://source.unsplash.com/1200x400/?openbook') center/cover no-repeat;
       padding: 6rem 2rem;
