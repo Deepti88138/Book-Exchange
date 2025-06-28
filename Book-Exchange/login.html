@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | BookLoop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="left"></div>
+  <div class="right">
+    <div class="form-container">
+      <h2>Welcome to BookLoop!</h2>
+      <p class="subtext">Join our community of readers!</p>
+      
+      <div class="switch-buttons">
+  <a href="login.html" class="switch-btn active">Sign In</a>
+  <a href="signup.html" class="switch-btn">Sign Up</a>
+</div>
+
+
+      <form onsubmit="event.preventDefault(); window.location.href='index.html';">
+        <input type="email" placeholder="email@example.com" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign in</button>
+      </form>
+
+      <div class="toggle">
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
