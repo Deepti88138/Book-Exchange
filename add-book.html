@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Book | BookExchange</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="add-book.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <strong>BookLoop</strong>
+      <nav>
+        <a href="Index.html">Home</a>
+        <a href="add-book.html">Add Book</a>
+        <a href="search-books.html">Search Books</a>
+        <a href="my-history.html">My History</a>
+        <a href="borrow-requests.html">Borrow Requests</a>
+        <a href="exchange-chat.html">Chat Section</a>
+        <a href="membership.html">Membership</a>
+      </nav>
+    </div>
+   <div class="header-right">
+    <a href="notifications.html" class="icon-link" title="Notifications">🔔</a>
+    <a href="profile.html" class="icon-link" title="Profile">👤</a>
+  </div>
+</header>
+
+  </header>
+
+  <div class="banner">
+    <h1>Ready to Share Your Books?</h1>
+    <p>Share your literary treasures with fellow readers.</p>
+  </div>
+
+  <div class="form-wrapper">
+    <h2>Add Your Book to BookExchange</h2>
+    <form>
+      <div class="form-group">
+        <label>Title</label>
+        <input type="text" placeholder="Enter book title" required>
+      </div>
+      <div class="form-group">
+        <label>Author</label>
+        <input type="text" placeholder="Enter author's name" required>
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea placeholder="Brief description..." rows="4"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Book Cover (URL)</label>
+        <input type="url" placeholder="Paste image URL">
+      </div>
+      <div class="form-group">
+        <label>Condition</label>
+        <select>
+          <option>New</option>
+          <option>Like New</option>
+          <option>Good</option>
+          <option>Used</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Availability</label>
+        <select>
+          <option>Available</option>
+          <option>Coming Soon</option>
+        </select>
+      </div>
+      <button type="submit">Add Book</button>
+    </form>
+    <div class="tips">
+      <p><strong>Tips for a Great Book Listing:</strong></p>
+      <ul>
+        <li>Clear Photos</li>
+        <li>Accurate Description</li>
+        <li>Set Expectations</li>
+        <li>Timely Response</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    BookExchange &copy; 2025
+  </footer>
+</body>
+</html>

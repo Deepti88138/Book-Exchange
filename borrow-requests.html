@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Borrow Requests | BookExchange</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="borrow-requests.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <strong>BookLoop</strong>
+      <nav>
+        <a href="Index.html">Home</a>
+        <a href="add-book.html">Add Book</a>
+        <a href="search-books.html">Search Books</a>
+        <a href="my-history.html">My History</a>
+        <a href="borrow-requests.html">Borrow Requests</a>
+        <a href="exchange-chat.html">Chat Section</a>
+        <a href="membership.html">Membership</a>
+      </nav>
+    </div>
+     <div class="header-right">
+    <a href="notifications.html" class="icon-link" title="Notifications">🔔</a>
+    <a href="profile.html" class="icon-link" title="Profile">👤</a>
+  </div>
+</header>
+
+  </header>
+
+  <div class="container">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="incoming">Incoming Requests</button>
+      <button class="tab-btn" data-tab="outgoing">Outgoing Requests</button>
+    </div>
+
+    <div class="main-content" id="incoming">
+      <div class="left-panel">
+        <div class="request selected">
+          <img src="https://m.media-amazon.com/images/I/51Z0nLAfLmL._SY445_SX342_.jpg" alt="Wanderlust Chronicles">
+          <div class="request-details">
+            <h4>Wanderlust Chronicles</h4>
+            <p>From: Explorer Nomad</p>
+            <span class="tag pending">Pending</span>
+            <span class="time">2 hours ago</span>
+          </div>
+        </div>
+        <div class="request">
+          <img src="https://m.media-amazon.com/images/I/61i4k7DWNFL._UF1000,1000_QL80_.jpg" alt="Sapiens">
+          <div class="request-details">
+            <h4>Sapiens</h4>
+            <p>From: Bob Smith</p>
+            <span class="tag pending">Pending</span>
+            <span class="time">1 day ago</span>
+          </div>
+        </div>
+        <div class="request">
+          <img src="https://m.media-amazon.com/images/I/81gepf1eMqL._UF1000,1000_QL80_.jpg" alt="To Kill a Mockingbird">
+          <div class="request-details">
+            <h4>To Kill a Mockingbird</h4>
+            <p>From: Diana Prince</p>
+            <span class="tag rejected">Rejected</span>
+            <span class="time">5 days ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div class="book-preview">
+          <img src="https://m.media-amazon.com/images/I/51Z0nLAfLmL._SY445_SX342_.jpg" alt="Wanderlust Chronicles">
+          <div>
+            <h3>Wanderlust Chronicles</h3>
+            <p><strong>Explorer Nomad</strong></p>
+            <p>A classic tale of a shepherd boy named Santiago who journeys to the Egyptian desert in search of a hidden treasure. Through his travels, he learns valuable lessons about destiny, love, and the true meaning of life’s journey.</p>
+            <p><span class="genre">Genre:</span> Adventure, Philosophy</p>
+          </div>
+        </div>
+        <div class="message-box">
+          <div class="user-info">
+            <div class="avatar">AJ</div>
+            <div>
+              <strong>Alice Johnson</strong><br/>
+              <small>Requester</small>
+            </div>
+          </div>
+          <p><strong>Request Message:</strong></p>
+          <p>Hello! I’m very interested in borrowing “The Alchemist”. I’ve heard great things about it. Let me know if it’s available!</p>
+          <p class="timestamp">Sent on July 26, 2024, 10:30 AM</p>
+          <div class="actions">
+            <button class="reject">Reject Request</button>
+            <button class="accept">Accept Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content" id="outgoing" style="display:none;">
+      <p style="padding: 2rem;">No outgoing requests yet.</p>
+    </div>
+  </div>
+
+  <footer>
+    BookExchange © 2025 | Stay updated with BookExchange
+  </footer>
+
+  <script src="borrow-requests.js"></script>
+</body>
+</html>
