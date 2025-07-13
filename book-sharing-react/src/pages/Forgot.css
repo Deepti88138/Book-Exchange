@@ -1,0 +1,88 @@
+.forgot-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(120deg, #f3f4f6, #e0e7ff);
+  min-height: calc(100vh - 160px); 
+}
+
+.forgot-container {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.forgot-container h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.forgot-container p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.forgot-container input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.forgot-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.forgot-container button:hover {
+  background-color: #4338ca;
+}
+
+.forgot-container .back-link {
+  margin-top: 15px;
+  display: block;
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-container .back-link:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .forgot-page {
+    padding: 2rem 1rem;
+  }
+
+  .forgot-container {
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .forgot-container h2,
+  .forgot-container p,
+  .forgot-container input,
+  .forgot-container button,
+  .forgot-container .back-link {
+    font-size: 1rem;
+  }
+}

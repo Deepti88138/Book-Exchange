@@ -1,0 +1,47 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+.notifications-page {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+
+.notification {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .notifications-page {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .notification {
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+}
