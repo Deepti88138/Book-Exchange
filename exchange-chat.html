@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exchange Coordination Chat | BookLoop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="exchange-chat.css" />
+</head>
+<body>
+ <header>
+    <div class="header-left">
+      <strong>BookLoop</strong>
+      <nav>
+        <a href="Index.html">Home</a>
+        <a href="add-book.html">Add Book</a>
+        <a href="search-books.html">Search Books</a>
+        <a href="my-history.html">My History</a>
+        <a href="borrow-requests.html">Borrow Requests</a>
+        <a href="exchange-chat.html">Chat Section</a>
+        <a href="membership.html">Membership</a>
+      </nav>
+    </div>
+    <div class="header-right">
+    <a href="notifications.html" class="icon-link" title="Notifications">🔔</a>
+    <a href="profile.html" class="icon-link" title="Profile">👤</a>
+  </div>
+</header>
+
+  </header>
+
+<main class="container">
+  <aside class="sidebar">
+    <h3>How to Coordinate Your Book Exchange</h3>
+    <ul>
+      <li>📞 Reach out after accepting</li>
+      <li>📍 Choose a public location</li>
+      <li>🕒 Pick a time/date that works</li>
+      <li>✅ Confirm details to avoid issues</li>
+      <li>📖 Meet and exchange book</li>
+      <li>📦 Mark as exchanged</li>
+    </ul>
+    <div class="borrower-box">
+      <h4>Borrower Info</h4>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT0ZnUKa5MS1tglmhU1JhkW3SxexchRBo6SA&s" alt="Sarah" class="avatar">
+      <p><strong>Alice Johnson</strong></p>
+      <p>📧 alice.c@example.com</p>
+      <p>📞 +1 (555) 123-4567</p>
+    </div>
+  </aside>
+
+  <section class="chat-area">
+    <h2>Exchange Coordination Chat</h2>
+
+    <div id="chat-box" class="chat-box">
+      <div class="msg other">Hi Alex! Thanks for accepting my request... <span>10:05 AM</span></div>
+      <div class="msg self">Hey Alice! I'm free Wednesday evening or Saturday morning. <span>10:10 AM</span></div>
+      <div class="msg other">How about 10 AM at the 'Central Park Cafe'? <span>10:15 AM</span></div>
+      <div class="msg self">Perfect! See you at 10 AM Saturday at Central Park Cafe. <span>10:20 AM</span></div>
+      <div class="msg other">Looking forward to it! <span>10:25 AM</span></div>
+    </div>
+
+    <div class="input-box">
+      <input type="text" id="message-input" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <div class="meeting-box">
+      <h4>📅 Exchange Meeting Confirmed</h4>
+      <p><strong>Saturday, July 27, 2024</strong></p>
+      <p>10:00 AM – 10:30 AM</p>
+      <p>📍 Central Park Cafe</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 BookLoop | Exchange made easy
+</footer>
+
+<script>
+  function sendMessage() {
+    const input = document.getElementById("message-input");
+    const message = input.value.trim();
+    if (message !== "") {
+      const chatBox = document.getElementById("chat-box");
+      const msgDiv = document.createElement("div");
+      msgDiv.className = "msg self";
+      const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      msgDiv.innerHTML = `${message}<span>${time}</span>`;
+      chatBox.appendChild(msgDiv);
+      input.value = "";
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  }
+</script>
+
+</body>
+</html>
